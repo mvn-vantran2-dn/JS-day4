@@ -1,4 +1,3 @@
-
 const ajaxAPI = document.querySelector('.ajax .row');
 $.ajax({
     url: "https://reqres.in/api/users",
@@ -20,10 +19,10 @@ $.ajax({
     }
 })
 
-const fetchAPI = document.querySelector('.fetch .row');
 fetch('https://reqres.in/api/unknown')
     .then((res) => res.json())
     .then((data) => {
+        const fetchAPI = document.querySelector('.fetch .row');
         data = data.data;
         fetchAPI.innerHTML = data
         .map((item) => {
