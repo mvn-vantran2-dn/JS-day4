@@ -1,4 +1,8 @@
-
+.card-img-top {
+    height: 100%;
+    object-fit: contain;
+    padding: 100px; 
+}
 .card{
     margin: 0 10px;
     display: block; 
@@ -8,8 +12,4 @@
     text-align: center;
     margin-block: revert;
 }
-.card-img-top {
-    height: 100%;
-    object-fit: contain;
-    padding: 100px; 
-}
+
